@@ -1,0 +1,181 @@
+body
+{
+    margin: 0px;
+    padding: 0px;
+    background-color: #FFFFFF;
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    color: #56433B;
+}
+
+.base-bar
+{
+    position:absolute;
+    z-index: -1;
+    left:68%; 
+    width:20.7%; 
+    height:720px
+}
+
+
+a
+{
+    color: #56433B;
+    text-decoration: none;
+}
+
+table
+{
+    border-spacing: 0px;
+}
+
+a:hover
+{
+    color: #E5B995;
+    text-decoration: none;
+}
+
+.spacer
+{
+    width: 1%;
+}
+
+
+.alignTextLeft
+{
+    text-align: left;
+}
+.secondaryBg
+{
+    background-color: #E5B995;
+}
+
+.contentCommon
+{
+    margin-left:11.1%;
+    margin-right:11.1%;
+}
+
+
+.base {
+    position: relative;
+    width: 100%;
+    height: 81px;
+  }
+  
+.framework
+{
+    display: flex;
+    width: 77.8%;
+}
+
+.contentHolder
+{
+    width:73.2% ;
+    height:450px;
+    padding-top: 150px;
+    text-align: center;
+}
+
+.imgHolder
+{
+    width:26.8% ;
+}
+
+.image
+{
+    width:100%;
+    transform: rotate(2.81deg) scaleX(-1.55) scaleY(1.55) translate(2.5%, 75px);
+}
+
+.box
+{
+    width:17.7%;
+    height: 47px;
+    line-height: 40px;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 0.85em;
+}
+.borderdBox
+{
+    border: #56433B 2px solid;
+    
+}
+.solidBox
+{
+    background-color: #56433B;
+    border: #56433B 2px solid;
+    color: #E5B995;
+}
+
+.centerText{
+    display:inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+.marVertAlign
+{
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+
+
+@media (orientation: portrait) {
+
+
+.box
+{
+    width:37.9%;
+    height: 47px;
+    line-height: 40px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.nav-bar
+{
+    display: none;
+}
+
+.base-bar
+{
+    display:none;
+}
+
+.framework
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.imgHolder
+{
+    order:1;
+    z-index: 0;
+    width:37% ;
+    height: 360px;
+    margin-left: 10%;
+    margin-right: auto;
+}
+.imgHolderWrapper
+{
+    overflow: hidden;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    background-color:#E5B995;
+}
+.marVertAlign{
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+.contentHolder
+{
+    order:2;
+    width:100% ;
+    padding-top: 0px;
+}
+}
