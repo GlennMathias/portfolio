@@ -35,7 +35,7 @@
 					<td class="spacer"></td>
 
 					<td class="alignTextLeft">
-						<a href=""> Projects </a>
+						<a href=""> Skills </a>
 					</td>
 					
 					<td class="spacer"></td>
@@ -56,32 +56,70 @@
 			</tbody>
 		</table>
 	</nav>
+
+	<div>
+		<div class="hamburger-menu" id="ham_menu">
+			<div style="color: #E5B995; text-align: right; margin-right: 10%;" onclick="closeHamMenu(ham_menu)">X</div>
+			<div class="hamburger-sub-menu">
+				<a href="" style="color: #E5B995;"> Home </a>
+			</div>
+			<div class="hamburger-sub-menu">
+				<a href="" style="color: #E5B995;"> Skills </a>
+			</div>
+			<div class="hamburger-sub-menu">
+				<a href="" style="color: #E5B995;"> Contact </a>
+			</div>
+		</div>
+	</div>
+
+	
+
+	<div class="contentCommon ham" onclick="openHamMenu(ham_menu)">
+		<div class="hamContainer" >
+				<div class="ham-bar" >
+				</div>
+				<div class="ham-bar-white">
+				</div>
+				<div class="ham-bar" style="height: 3px;">
+				</div>
+				<div class="ham-bar-white">
+				</div>
+				<div class="ham-bar">
+				</div>
+		</div>
+	</div>
 	
 	<div class="contentCommon framework">
 		<div class="contentHolder">
 			<div class="marVertAlign">Hello, I am</div>
 			<div style="font-size: 36px; font-weight: bold;" class="marVertAlign">Glenn Mathias</div>
+			<div class="marVertAlign">Full Stack Developer</div>
 			<div style="display:flex;justify-content: center;" class="marVertAlign">
-				<div class="box borderdBox"> <span class="centerText"> Download CV </span></div>
+				<a href="./assets/Glenn_Mathias_Resume.docx" download="Glenn's Resume" id ="resume" hidden></a>
+				<div class="box borderdBox" onclick="resume.click()"> <span class="centerText" > Download CV </span></div>
+
 				<div class="spacer"></div>
 				<div class="spacer"></div>
 				<div class="spacer"></div>
 				<div class="spacer"></div>
 				<div class="spacer"></div>
-				<div class="spacer"></div>
+				<div class="spacer"></div>			
 				
-				<div class="box solidBox"> <span class="centerText"> Contact Me </span> </div>
+				<div class="box solidBox" >
+						<span class="centerText"> Contact Me </span> 
+					</div>
+
 			</div>
 			<div class="marVertAlign">
-				<a href="https://github.com/GlennMathias" style="margin: 5px;">
-					<object data="./assets/SVG/iconmonstr-github-3.svg" type="image/svg+xml">
+				<a href="https://github.com/GlennMathias"  id="github_contact">
+				</a>
+					<object data="./assets/SVG/iconmonstr-github-3.svg" style="margin: 5px;" type="image/svg+xml" onclick="console.log('git hub');github_contact.click()">
 				  	</object>
-					</a>
-				<a href="https://www.linkedin.com/in/glenn-mathias-5863371b4/" style="margin: 5px;">
-					<object data="./assets/SVG/iconmonstr-linkedin-3.svg" type="image/svg+xml" 
+				<a href="https://www.linkedin.com/in/glenn-mathias-5863371b4/" id="linkedIn_contact">
+				</a>
+					<object onclick="console.log('Linked in');linkedIn_contact.click()" data="./assets/SVG/iconmonstr-linkedin-3.svg" type="image/svg+xml"  style="margin: 5px;" 
 					style="fill:red;width: 24px; height: 24px;">
 				  	</object>
-				</a>
 			</div>
 		</div>
 
@@ -94,6 +132,17 @@
 	</div>
 	
 </body>
+
+<script>
+	function closeHamMenu(ele)
+	{
+		ele.style.display="none";
+	}
+	function openHamMenu(ele)
+	{
+		ele.style.display="flex";
+	}
+</script>
 </html>
 
 
